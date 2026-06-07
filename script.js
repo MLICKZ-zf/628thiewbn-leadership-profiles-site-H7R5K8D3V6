@@ -53,7 +53,7 @@ function renderCards(section) {
                 <div class="card-body">
                     <h2>${person.name}</h2>
                     <h3>${person.title}</h3>
-                    <button>View Biography</button>
+                    <button>View Bio</button>
                 </div>
             `;
 
