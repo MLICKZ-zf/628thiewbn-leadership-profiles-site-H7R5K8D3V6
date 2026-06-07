@@ -1,202 +1,38 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>628th IEW BN Leadership</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Directory</title>
 
-<style>
-body{
-    font-family: Arial, sans-serif;
-    background:#f5f5f5;
-    margin:0;
-    padding:20px;
-}
-
-.header{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-}
-
-.card{
-    background:white;
-    width:300px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.2);
-    overflow:hidden;
-}
-
-.card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
-.content{
-    padding:20px;
-}
-
-.name{
-    font-size:22px;
-    font-weight:bold;
-}
-
-.title{
-    color:#666;
-    margin-bottom:10px;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="header">
-    <h1>Leadership Team</h1>
-</div>
+    <header>
+        <h1>Leadership Directory</h1>
+    </header>
 
-<div class="container">
+    <nav id="tabs"></nav>
 
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 1">
-        <div class="content">
-            <div class="name">John Smith</div>
-            <div class="title">Director</div>
-            <p>
-                John Smith has over 20 years of leadership experience
-                and oversees organizational operations.
-            </p>
+    <main>
+        <div id="cardContainer"></div>
+    </main>
+
+    <div id="bioModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+
+            <img id="modalImage" src="" alt="">
+            <h2 id="modalName"></h2>
+            <h3 id="modalTitle"></h3>
+
+            <p id="modalBio"></p>
         </div>
     </div>
 
-    <div class="card">
-        <img src="leader2.jpg" alt="Leader 2">
-        <div class="content">
-            <div class="name">Jane Doe</div>
-            <div class="title">Deputy Director</div>
-            <p>
-                Jane Doe manages strategic initiatives and workforce
-                development efforts.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 3">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 4">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 5">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 6">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 7">
-        <div class="content">
-            <<div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 8">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 9">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 10">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 11">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="leader1.jpg" alt="Leader 12">
-        <div class="content">
-            <div class="name">Insert leader name here</div>
-            <div class="title">Insert leader position here</div>
-            <p>
-                Insert leader bio here.
-            </p>
-        </div>
-    </div>
-</div>
+    <script src="leaders.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
