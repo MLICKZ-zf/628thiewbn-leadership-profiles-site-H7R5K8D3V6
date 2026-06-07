@@ -1,1 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 12px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.tab-btn {
+    border: none;
+    background: #e5e7eb;
+    padding: 10px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background: #003366;
+    color: white;
+}
+
+#cardContainer {
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h2 {
+    font-size: 1.2rem;
+}
+
+.card-body h3 {
+    color: #666;
+    margin: 6px 0;
+}
+
+.card-body button {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #003366;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#closeModal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #cardContainer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
