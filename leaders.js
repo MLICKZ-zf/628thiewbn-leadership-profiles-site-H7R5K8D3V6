@@ -16,7 +16,7 @@ const leaders = [
 {
     section: "628th IEW BN",
     name: "LTC Asa C. Coates",
-    title: "CDR, 628th IEW BN]",
+    title: "CDR, 628th IEW BN",
     image: "images/commander.jpg",
     bio: "[Insert bio here]"
 },
