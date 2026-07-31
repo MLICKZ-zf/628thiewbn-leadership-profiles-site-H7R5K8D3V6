@@ -128,3 +128,8 @@ header {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
+
+#modalBio {
+    white-space: pre-line;
+    line-height: 1.6;
+}
