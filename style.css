@@ -32,31 +32,6 @@ header h3 {
     margin: 0 20px;
 }
 
-#tabs {
-    display: flex;
-    overflow-x: auto;
-    gap: 8px;
-    padding: 12px;
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.tab-btn {
-    border: none;
-    background: #e5e7eb;
-    padding: 10px 16px;
-    border-radius: 20px;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-.tab-btn.active {
-    background: #003366;
-    color: white;
-}
-
 #cardContainer {
     padding: 15px;
     display: grid;
