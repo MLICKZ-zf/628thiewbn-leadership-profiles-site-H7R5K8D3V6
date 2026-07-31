@@ -28,11 +28,33 @@
     >
 </header>
 
-    <nav id="tabs"></nav>
-
     <main>
+    <!-- Landing page -->
+    <section id="homeView">
+        <div class="landing-content">
+            <h1>Leadership Biographies</h1>
+
+            <p class="landing-intro">
+                Select a section to view its leadership biographies.
+            </p>
+
+            <div id="sectionContainer"></div>
+        </div>
+    </section>
+
+    <!-- Selected section page -->
+    <section id="directoryView" class="hidden">
+        <div class="directory-header">
+            <button id="backToHome" type="button">
+                &larr; Back to Sections
+            </button>
+
+            <h1 id="sectionHeading"></h1>
+        </div>
+
         <div id="cardContainer"></div>
-    </main>
+    </section>
+</main>
 
     <div id="bioModal" class="modal hidden">
         <div class="modal-content">
@@ -51,3 +73,5 @@
 
 </body>
 </html>
+<script src="leaders.js?v=2"></script>
+<script src="script.js?v=2"></script>
