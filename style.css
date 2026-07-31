@@ -132,6 +132,12 @@ header h2 {
     margin-bottom: 15px;
 }
 
+
+#modalBio {
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
 #closeModal {
     position: absolute;
     top: 15px;
@@ -165,7 +171,16 @@ header h2 {
     }
 }
 
-#modalBio {
-    white-space: pre-line;
-    line-height: 1.6;
+@media (max-width: 768px) {
+
+    .header-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    header h2 {
+        font-size: 1.1rem;
+        margin: 0 10px;
+    }
+
 }
