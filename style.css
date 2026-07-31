@@ -132,10 +132,14 @@ header h3 {
     margin-bottom: 15px;
 }
 
-
 #modalBio {
     white-space: pre-line;
     line-height: 1.6;
+    margin-top: 10px;
+}
+
+#modalTitle {
+    margin-bottom: 10px;
 }
 
 #closeModal {
