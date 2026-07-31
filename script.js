@@ -10,6 +10,37 @@ const modalTitle = document.getElementById("modalTitle");
 const modalBio = document.getElementById("modalBio");
 
 const sections = [...new Set(leaders.map(x => x.section))];
+const sections = [...new Set(leaders.map(x => x.section))];
+
+let activeSectionIndex = 0;
+
+function activateTab(index) {
+    // Prevent navigation beyond the first or last tab
+    if (index < 0 || index >= sections.length) {
+        return;
+    }
+
+    activeSectionIndex = index;
+
+    const tabButtons = document.querySelectorAll(".tab-btn");
+
+    tabButtons.forEach(button => {
+        button.classList.remove("active");
+    });
+
+    const activeButton = tabButtons[activeSectionIndex];
+
+    activeButton.classList.add("active");
+
+    renderCards(sections[activeSectionIndex]);
+
+    // Keep the selected tab visible in the horizontal navigation
+    activeButton.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center"
+    });
+}
 
 function buildTabs() {
     sections.forEach((section, index) => {
@@ -23,13 +54,7 @@ function buildTabs() {
         }
 
         btn.addEventListener("click", () => {
-            document
-                .querySelectorAll(".tab-btn")
-                .forEach(b => b.classList.remove("active"));
-
-            btn.classList.add("active");
-
-            renderCards(section);
+            activateTab(index);
         });
 
         tabsContainer.appendChild(btn);
@@ -82,5 +107,59 @@ window.addEventListener("click", e => {
     }
 });
 
+let touchStartX = 0;
+let touchStartY = 0;
+let touchEndX = 0;
+let touchEndY = 0;
+
+const minimumSwipeDistance = 50;
+
+cardContainer.addEventListener(
+    "touchstart",
+    event => {
+        const touch = event.changedTouches[0];
+
+        touchStartX = touch.screenX;
+        touchStartY = touch.screenY;
+    },
+    { passive: true }
+);
+
+cardContainer.addEventListener(
+    "touchend",
+    event => {
+        const touch = event.changedTouches[0];
+
+        touchEndX = touch.screenX;
+        touchEndY = touch.screenY;
+
+        handleSwipe();
+    },
+    { passive: true }
+);
+
+function handleSwipe() {
+    const horizontalDistance = touchEndX - touchStartX;
+    const verticalDistance = touchEndY - touchStartY;
+
+    // Ignore short movements
+    if (Math.abs(horizontalDistance) < minimumSwipeDistance) {
+        return;
+    }
+
+    // Ignore mostly vertical movement so normal page scrolling still works
+    if (Math.abs(verticalDistance) > Math.abs(horizontalDistance)) {
+        return;
+    }
+
+    if (horizontalDistance < 0) {
+        // Swipe left: move to the next tab
+        activateTab(activeSectionIndex + 1);
+    } else {
+        // Swipe right: move to the previous tab
+        activateTab(activeSectionIndex - 1);
+    }
+}
+
 buildTabs();
-renderCards(sections[0]);
+activateTab(0);
