@@ -166,5 +166,73 @@ window.addEventListener("keydown", event => {
     }
 });
 
+// Swipe right to return to the landing page
+
+let sectionTouchStartX = null;
+let sectionTouchStartY = 0;
+
+const minimumBackSwipeDistance = 60;
+const edgeSwipeWidth = 40;
+
+directoryView.addEventListener(
+    "touchstart",
+    event => {
+        // Do not allow section navigation while the bio modal is open
+        if (!modal.classList.contains("hidden")) {
+            return;
+        }
+
+        const touch = event.changedTouches[0];
+
+        // Require the swipe to begin within 40px of the left edge
+        if (touch.clientX > edgeSwipeWidth) {
+            sectionTouchStartX = null;
+            return;
+        }
+
+        sectionTouchStartX = touch.clientX;
+        sectionTouchStartY = touch.clientY;
+    },
+    { passive: true }
+);
+
+directoryView.addEventListener(
+    "touchend",
+    event => {
+        // Do not allow section navigation while the bio modal is open
+        if (!modal.classList.contains("hidden")) {
+            return;
+        }
+
+        // Ignore the gesture if it did not start near the left edge
+        if (sectionTouchStartX === null) {
+            return;
+        }
+
+        const touch = event.changedTouches[0];
+
+        const horizontalDistance =
+            touch.clientX - sectionTouchStartX;
+
+        const verticalDistance =
+            touch.clientY - sectionTouchStartY;
+
+        // Ignore short or leftward movements
+        if (horizontalDistance < minimumBackSwipeDistance) {
+            return;
+        }
+
+        // Ignore gestures that are mostly vertical
+        if (Math.abs(verticalDistance) > Math.abs(horizontalDistance)) {
+            return;
+        }
+
+        showHome();
+
+        // Reset the stored gesture
+        sectionTouchStartX = null;
+    },
+    { passive: true }
+);
 
 buildSectionDirectory();
