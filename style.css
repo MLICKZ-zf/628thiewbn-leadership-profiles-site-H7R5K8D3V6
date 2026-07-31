@@ -121,12 +121,13 @@ header h3 {
 }
 
 #closeModal {
-    position: absolute;
-    top: 1px;
-    right: 1px;
+    position: sticky;
+    top: 10px;
 
-    width: 30px;
-    height: 30px;
+    margin-left: auto;
+
+    width: 34px;
+    height: 34px;
 
     display: flex;
     justify-content: center;
@@ -139,6 +140,8 @@ header h3 {
 
     font-size: 24px;
     cursor: pointer;
+
+    z-index: 10;
 
     transition: background .2s;
 }
