@@ -33,6 +33,9 @@ header h3 {
 }
 
 #cardContainer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 15px;
     display: grid;
     gap: 15px;
