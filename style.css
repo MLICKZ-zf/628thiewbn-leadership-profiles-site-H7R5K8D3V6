@@ -118,10 +118,29 @@ header {
 
 #closeModal {
     position: absolute;
+    top: 15px;
     right: 15px;
-    top: 10px;
-    font-size: 30px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #003366;
+    color: white;
+
+    font-size: 24px;
     cursor: pointer;
+
+    transition: background .2s;
+}
+
+#closeModal:hover {
+    background: #0050a0;
 }
 
 @media (min-width: 768px) {
