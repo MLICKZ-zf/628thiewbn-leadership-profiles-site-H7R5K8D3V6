@@ -1,5 +1,10 @@
-const tabsContainer = document.getElementById("tabs");
+const homeView = document.getElementById("homeView");
+const directoryView = document.getElementById("directoryView");
+
+const sectionContainer = document.getElementById("sectionContainer");
+const sectionHeading = document.getElementById("sectionHeading");
 const cardContainer = document.getElementById("cardContainer");
+const backToHome = document.getElementById("backToHome");
 
 const modal = document.getElementById("bioModal");
 const closeModal = document.getElementById("closeModal");
@@ -9,156 +14,157 @@ const modalName = document.getElementById("modalName");
 const modalTitle = document.getElementById("modalTitle");
 const modalBio = document.getElementById("modalBio");
 
-const sections = [...new Set(leaders.map(x => x.section))];
+const sections = [...new Set(leaders.map(person => person.section))];
 
-let activeSectionIndex = 0;
 
-function activateTab(index) {
-    // Prevent navigation beyond the first or last tab
-    if (index < 0 || index >= sections.length) {
-        return;
-    }
+/*
+    Build the table of contents on the landing page.
+*/
+function buildSectionDirectory() {
+    sectionContainer.innerHTML = "";
 
-    activeSectionIndex = index;
+    sections.forEach(section => {
+        const sectionButton = document.createElement("button");
 
-    const tabButtons = document.querySelectorAll(".tab-btn");
+        sectionButton.type = "button";
+        sectionButton.className = "section-button";
 
-    tabButtons.forEach(button => {
-        button.classList.remove("active");
-    });
+        const leaderCount = leaders.filter(
+            person => person.section === section
+        ).length;
 
-    const activeButton = tabButtons[activeSectionIndex];
+        sectionButton.innerHTML = `
+            <span class="section-name">${section}</span>
+            <span class="section-count">
+                ${leaderCount} ${leaderCount === 1 ? "Leader" : "Leaders"}
+            </span>
+            <span class="section-arrow" aria-hidden="true">&rsaquo;</span>
+        `;
 
-    activeButton.classList.add("active");
-
-    renderCards(sections[activeSectionIndex]);
-
-    // Keep the selected tab visible in the horizontal navigation
-    activeButton.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center"
-    });
-}
-
-function buildTabs() {
-    sections.forEach((section, index) => {
-        const btn = document.createElement("button");
-
-        btn.className = "tab-btn";
-        btn.textContent = section;
-
-        if(index === 0) {
-            btn.classList.add("active");
-        }
-
-        btn.addEventListener("click", () => {
-            activateTab(index);
+        sectionButton.addEventListener("click", () => {
+            showSection(section);
         });
 
-        tabsContainer.appendChild(btn);
+        sectionContainer.appendChild(sectionButton);
     });
 }
 
-function renderCards(section) {
+
+/*
+    Hide the landing page and show the selected section.
+*/
+function showSection(section) {
+    sectionHeading.textContent = section;
+
+    renderCards(section);
+
+    homeView.classList.add("hidden");
+    directoryView.classList.remove("hidden");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+/*
+    Return to the table-of-contents landing page.
+*/
+function showHome() {
+    directoryView.classList.add("hidden");
+    homeView.classList.remove("hidden");
 
     cardContainer.innerHTML = "";
+    sectionHeading.textContent = "";
 
-    leaders
-        .filter(x => x.section === section)
-        .forEach(person => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
 
-            const card = document.createElement("div");
 
-            card.className = "card";
+/*
+    Render every leader belonging to the selected section.
+*/
+function renderCards(section) {
+    cardContainer.innerHTML = "";
 
-            card.innerHTML = `
-                <img src="${person.image}" alt="${person.name}">
-                <div class="card-body">
-                    <h2>${person.name}</h2>
-                    <h3>${person.title}</h3>
-                    <button>View Bio</button>
-                </div>
-            `;
+    const sectionLeaders = leaders.filter(
+        person => person.section === section
+    );
 
-            card.querySelector("button")
-                .addEventListener("click", () => {
+    sectionLeaders.forEach(person => {
+        const card = document.createElement("article");
 
-                    modalImage.src = person.image;
-                    modalName.textContent = person.name;
-                    modalTitle.textContent = person.title;
-                    modalBio.textContent = person.bio;
+        card.className = "card";
 
-                    modal.classList.remove("hidden");
-                });
+        card.innerHTML = `
+            <img
+                src="${person.image}"
+                alt="Portrait of ${person.name}"
+            >
 
-            cardContainer.appendChild(card);
+            <div class="card-body">
+                <h2>${person.name}</h2>
+                <h3>${person.title}</h3>
+
+                <button type="button">
+                    View Bio
+                </button>
+            </div>
+        `;
+
+        const bioButton = card.querySelector("button");
+
+        bioButton.addEventListener("click", () => {
+            openBiography(person);
         });
+
+        cardContainer.appendChild(card);
+    });
 }
 
-closeModal.addEventListener("click", () => {
+
+/*
+    Populate and open the biography modal.
+*/
+function openBiography(person) {
+    modalImage.src = person.image;
+    modalImage.alt = `Portrait of ${person.name}`;
+
+    modalName.textContent = person.name;
+    modalTitle.textContent = person.title;
+    modalBio.textContent = person.bio;
+
+    modal.classList.remove("hidden");
+}
+
+
+/*
+    Close the biography modal.
+*/
+function closeBiography() {
     modal.classList.add("hidden");
-});
-
-window.addEventListener("click", e => {
-    if(e.target === modal) {
-        modal.classList.add("hidden");
-    }
-});
-
-let touchStartX = 0;
-let touchStartY = 0;
-let touchEndX = 0;
-let touchEndY = 0;
-
-const minimumSwipeDistance = 50;
-
-cardContainer.addEventListener(
-    "touchstart",
-    event => {
-        const touch = event.changedTouches[0];
-
-        touchStartX = touch.screenX;
-        touchStartY = touch.screenY;
-    },
-    { passive: true }
-);
-
-cardContainer.addEventListener(
-    "touchend",
-    event => {
-        const touch = event.changedTouches[0];
-
-        touchEndX = touch.screenX;
-        touchEndY = touch.screenY;
-
-        handleSwipe();
-    },
-    { passive: true }
-);
-
-function handleSwipe() {
-    const horizontalDistance = touchEndX - touchStartX;
-    const verticalDistance = touchEndY - touchStartY;
-
-    // Ignore short movements
-    if (Math.abs(horizontalDistance) < minimumSwipeDistance) {
-        return;
-    }
-
-    // Ignore mostly vertical movement so normal page scrolling still works
-    if (Math.abs(verticalDistance) > Math.abs(horizontalDistance)) {
-        return;
-    }
-
-    if (horizontalDistance < 0) {
-        // Swipe left: move to the next tab
-        activateTab(activeSectionIndex + 1);
-    } else {
-        // Swipe right: move to the previous tab
-        activateTab(activeSectionIndex - 1);
-    }
 }
 
-buildTabs();
-activateTab(0);
+
+backToHome.addEventListener("click", showHome);
+
+closeModal.addEventListener("click", closeBiography);
+
+window.addEventListener("click", event => {
+    if (event.target === modal) {
+        closeBiography();
+    }
+});
+
+window.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeBiography();
+    }
+});
+
+
+buildSectionDirectory();
