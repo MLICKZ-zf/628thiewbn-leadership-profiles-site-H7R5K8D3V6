@@ -10,7 +10,6 @@ const modalTitle = document.getElementById("modalTitle");
 const modalBio = document.getElementById("modalBio");
 
 const sections = [...new Set(leaders.map(x => x.section))];
-const sections = [...new Set(leaders.map(x => x.section))];
 
 let activeSectionIndex = 0;
 
