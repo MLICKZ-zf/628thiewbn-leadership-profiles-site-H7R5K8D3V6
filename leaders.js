@@ -2,7 +2,7 @@ const leaders = [
 {
     section: "State",
     name: "BG Andrew W. Collins",
-    title: "TAAG - Army",
+    title: "ATAG - Army",
     image: "images/commander.jpg",
     bio: "[Insert bio here]"
 },
