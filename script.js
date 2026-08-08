@@ -8,6 +8,7 @@ const backToHome = document.getElementById("backToHome");
 
 const modal = document.getElementById("bioModal");
 const closeModal = document.getElementById("closeModal");
+const modalContent = document.querySelector(".modal-content");
 
 const modalImage = document.getElementById("modalImage");
 const modalName = document.getElementById("modalName");
@@ -139,6 +140,9 @@ function openBiography(person) {
     modalBio.textContent = person.bio;
 
     modal.classList.remove("hidden");
+
+    // Reset the biography modal to the top
+    modalContent.scrollTop = 0;
 }
 
 
