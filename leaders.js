@@ -3,7 +3,7 @@ const leaders = [
     section: "State",
     name: "Mr. Wes Moore",
     title: "Governer of the state of Maryland",
-    image: "images/commander.jpg",
+    image: "images/Governer Wes Moore.png",
     bio: `Wes Moore is the 63rd Governor of the state of Maryland. He is Maryland’s first Black Governor in the state’s 246-year history, and is just the third African American elected Governor in the history of the United States.
     
 Born in Takoma Park, Maryland, on October 15, 1978, to Joy and Westley Moore, Moore’s life took a tragic turn when his father died of a rare, but treatable virus when he was just three years old. After his father’s death, his family moved to the Bronx to live with Moore’s grandparents before returning to Maryland at age 14.
@@ -52,7 +52,7 @@ Moore and his wife, First Lady Dawn Flythe Moore​, have two children – Mia�
     section: "State",
     name: "Major General Janeen L. Birckhead",
     title: "The Adjutant General",
-    image: "images/commander.jpg",
+    image: "images/MG Birckhead.jpg",
     bio: `Major General Janeen L. Birckhead currently serves as the 31st Adjutant General of the Maryland National Guard. In this capacity, MG Birckhead serves as an advisor to the Governor of Maryland. She is responsible for leading a force of over 6300 Soldiers, Airmen, and federal and state employees responsible for providing a relevant and capable force ready to fight, protect, defend, and prevail against all threats in a multidomain environment.  MG Birckhead most recently served as the Commander of the Maryland Army National Guard and was dual hatted as the Deputy Commandant for Reserve Affairs at the U.S. Army War College. MG Birckhead received her commission from Hampton University graduating with honors and as a distinguished military graduate through the Reserve Officers Training Corps. While at Hampton University, she earned a Bachelor's degree in Political Science. She later earned a Master's in Management from the University of Maryland University College. MG Birckhead is also a graduate of the U.S. Army War College where she earned a Master's in Strategic Studies.
     
 Prior to the role of Adjutant General, MG Birckhead also served as the Director of Legislative Affairs for the Maryland National Guard. She has commanded at the  company, battalion, and brigade level.
@@ -67,7 +67,7 @@ In her civilian capacity, Ms. Birckhead served as a Senior Advisor for the U.S. 
     section: "State",
     name: "Command Sergeant Major Larry M. Lecates",
     title: "Command Senior Enlisted Leader",
-    image: "images/commander.jpg",
+    image: "images/CSEL LeCates.jpeg",
     bio: `Command Sergeant Major Larry LeCates serves as the Command Senior Enlisted Leader for the Maryland National Guard. His distinguished military career spans over 23 years of dedicated service. Born in Salisbury, Maryland, CSM LeCates enlisted in the Maryland Army National Guard in June of 2003. After graduating from high school, he joined the Maryland Army National Guard and was assigned to the 115th Military Police Battalion. He completed Basic Combat Training and Advanced Individual Training at Fort Jackson, South Carolina, qualifying as a Human Resource Specialist.
     
 While serving in the Maryland Army National Guard, CSM LeCates has held numerous positions of increasing responsibility. His earlier assignments include serving as a Human Resource Specialist and Combat Medic for the 115th Military Police Battalion. He later served as a Team Leader and Squad Leader in the 224th Medical Company, deploying in support of Operation Iraqi Freedom. Additionally, CSM LeCates has completed rotations in support of Operation Atlantic Resolve and Operation Enduring Freedom.
@@ -84,7 +84,7 @@ CSM LeCates currently lives in Delmar, Maryland with his wife, Megan and three c
     section: "MD ARNG",
     name: "Brigadier General W. Andrew Collins, Ph. D.",
     title: "The Assistant Adjutant General",
-    image: "images/commander.jpg",
+    image: "images/BG Collins.png",
     bio: `Brigadier General Andrew William Collins currently serves as the Assistant Adjutant General for the Maryland Army National Guard, leading over 4,500 Soldiers across Maryland. He also serves as the Deputy Adjutant General of the Maryland National Guard, providing oversight of the entire Maryland National Guard force of over 6,000 Soldiers and Airmen. In these roles, BG Collins is responsible for ensuring Maryland’s military forces are properly trained and equipped to protect, defend, and prevail against all threats in a multidomain environment, supporting both state and federal missions.
     
  BG Collins received his commission as a distinguished military graduate through the Reserve Officers Training Corps at Carson-Newman College. He holds a Ph.D. in Public Policy & National Security from Liberty University. He is a graduate of the U.S. Army War College with a Master of Strategic Studies, and also earned a Master of Business Administration from Franklin University and a Bachelor of Arts in English from Carson-Newman College.
@@ -99,7 +99,7 @@ CSM LeCates currently lives in Delmar, Maryland with his wife, Megan and three c
     section: "MD ARNG",
     name: "Command Sergeant Major Patrick M. Metzger",
     title: "Command Sergeant Major for the Maryland Army National Guard",
-    image: "images/commander.jpg",
+    image: "images/CSM Metzger.jpg",
     bio: `CSM Metzger enlisted in the United State Marine Corps in November 1992, and completed recruit training the following year. CSM Metzger joined the Maryland National Guard in 1998, after being honorably discharged from the Marines.   CSM Metzger has served in enlisted assignments in the team, squad, platoon, company, battalion, and brigade levels.
     
 CSM Metzger’s career began on Active Duty serving four years in the United State Marine Corps as an Infantryman, assigned to Marine Barracks Washington, DC, as a ceremonial March and member of the Silent Drill Platoon.  He transitioned to the Maryland Army National Guard and has over 31 years of military service to the Nation and the State of Maryland.
@@ -116,7 +116,7 @@ CSM Metzger is a traditional Guardsman and is a 26-year veteran of the Maryland 
     section: "58th EMIB",
     name: "Colonel Kirstie Y. Roy",
     title: "Commander of the 58th Expeditionary Military Intelligence Brigade",
-    image: "images/commander.jpg",
+    image: "images/COL Roy.jpeg",
     bio: `Colonel Kirstie Y. Roy assumed command of the 58th Expeditionary Military Intelligence Brigade, Maryland Army National Guard, on 1 December 2025. She previously served as the Director of Intelligence (J2), Maryland National Guard Joint Staff.
     
 COL Roy was commissioned in 2002 through the Officer Candidate School. Her early assignments include Platoon Leader, Company Commander, and Counterintelligence Officer in the 341st Military Intelligence Battalion. She deployed to Iraq in 2008 as the Intelligence Plans Officer (S2) and Electronic Warfare Officer for the Brigade Special Troops Battalion, 81st Brigade Combat Team. She later served as the J2 for the National Guard Homeland Response Force, Region X.
@@ -133,7 +133,7 @@ COL Roy serves at the National Guard Bureau as the principal lead for Informatio
     section: "58th EMIB",
     name: "Command Sergeant Major Benjamin J. Davis ",
     title: "Command Sergeant Major of the 58th Expeditionary Military Intelligence Brigade",
-    image: "images/commander.jpg",
+    image: "images/CSM Davis.jpg",
     bio: `Command Sergeant Major Benjamin J. Davis enlisted in the Maryland Army National Guard on 16 December 2003. After completion of basic training, he graduated Advanced Individual Training as a Radio Operator. CSM Davis was later reclassified as an all-source intelligence analyst.
     
 CSM Davis’s career has spanned over 20 years. He has led at every level from team leader, platoon sergeant, section leader at the battalion, brigade, and G-Staff level, company first sergeant, operations sergeant major, and his current assignment as Battalion Command Sergeant Major. 
@@ -227,7 +227,7 @@ Captain Settle and her partner Dale reside in Alexandria, Virginia.`
     section: "A Co, 628th IEW BN",
     name: "First Sergeant Scott D. Valent",
     title: "First Sergeant, Alpha Company, 628th Intelligence & Electronic Warfare Battalion",
-    image: "images/1SG Scott Valent.jpg",
+    image: "images/1SG Valent.jpg",
     bio: `Born in Monterey, California., First Sergeant Valent entered military service in 2009 as an All-Source Intelligence Analyst in the United States Army. During his initial training, he was selected as a member of the “Quickstart” program, which sent him on a combat deployment to Eastern Afghanistan immediately upon graduation. Upon return, he was assigned to the 101st Airborne Division, where he deployed again to Afghanistan and served as an intelligence analyst partnering with the Afghan National Army. 
 
 First Sergeant Valent finished his time in the 101st Airborne as an intelligence NCO with the 2-320 Field Artillery Regiment, 101st Airborne Division. In June 2013, upon completion of his initial enlistment, he re-enlisted into the Maryland Army National Guard and served as an intelligence analyst in the 29th Infantry Division. In September 2017, he served as the Detachment Sergeant for Headquarters, Headquarters Detachment, 629th Military Intelligence Battalion. Shortly after, First Sergeant Valent was selected for Active Guard Reserve as a security specialist at the National Guard Bureau. He served for three years in this role and was then assigned as a senior security specialist for the Maryland Army National Guard G2. In February 2026, he assumed responsibility as First Sergeant of Alpha Company, 628th Intelligence and Electronic Warfare Battalion. 
@@ -255,7 +255,7 @@ Captain Monfiletto’s military education includes the Military Intelligence Off
     section: "B Co, 628th IEW BN",
     name: "Staff Sergeant Michael B. Beck",
     title: "NCOIC, Bravo Detachment, 628th Intelligence & Electronic Warfare Battalion",
-    image: "images/commander.jpg",
+    image: "images/SSG Beck.jpg",
     bio: `Born in Baltimore, Maryland, Staff Sergeant Michael B. Beck entered military service in 2014 as a Signals Intelligence Analyst (35N) in the United States Army. His first assignment was with the 704th Military Intelligence Battalion at Fort Meade, Maryland, where he served as a Critic Reporter and Quality Control Analyst supporting national intelligence missions.
     
 Staff Sergeant Beck later transferred to the 116th Military Intelligence Battalion at Fort Gordon, Georgia, where he served as a Mission Manager and Collector supporting the Guardrail mission focused on the United States European Command (EUCOM) Area of Responsibility. Following this assignment, he returned to Fort Meade, Maryland, and was assigned to the 780th Military Intelligence Battalion in support of United States Cyber Command. During this time, he served as a Senior Target Analyst Reporter (TAR) and Technical Digital Network Analyst (TDNA) on the 100th Combat Support Team (CST), providing critical intelligence support to cyber and national security operations.
@@ -287,7 +287,7 @@ Captain Bowman and his wife Alyssa reside in Fort Washington, Maryland.`
     section: "C Co, 628th IEW BN",
     name: "First Sergeant Akobi S. Burton",
     title: "First Sergeant, Charlie Company, 628th Intelligence & Electronic Warfare Battalion",
-    image: "images/commander.jpg",
+    image: "images/1SG Burton.jpg",
     bio: `Born in Bridgetown, Barbados, First Sergeant Akobi S. Burton entered active-duty military service in 2011 as a Cryptologic Linguist (35P), attending the Defense Language Institute Foreign Language Center (DLIFLC) in Monterey, California. 1SG Burton subsequently accepted a Special Operations Team-Alpha (SOT-A) assignment at 3rd Battalion, 7th Special Forces Group (Airborne) (7th SFG(A)) in Eglin, Florida. 1SG Burton served three years at 7th SFG (A) and deployed to Kandahar, Afghanistan and Georgetown, Guyana as a SOT-A Team Sergeant.
 
 First Sergeant Burton then transitioned to the U.S. Special Operations Command (USSOCOM) Headquarters Special Operations Forces Targeting Element (STTE). This USSOCOM Program of Record is responsible for teaching advanced SIGINT tactics, techniques and procedures to all U.S. Special Operations Forces (SOF) components. 1SG Burton served as an instructor, curricula developer, course lead for three of the four courses and finally STTE NCOIC. 1SG Burton then transitioned to the USSOCOM Special Operations Cryptologic Office as a Policy and Compliance Lead. In 2020, 1SG Burton transitioned to the Maryland Army National Guard where he served at the U.S. Army Technical and Collection Analysis Element (ATCAE) Augmentation Detachment and the 70th Regimental Training Institute. In February 2026, 1SG burton assumed responsibility as First Sergeant of Charlie Company, 628th Intelligence and Electronic Warfare Battalion.
