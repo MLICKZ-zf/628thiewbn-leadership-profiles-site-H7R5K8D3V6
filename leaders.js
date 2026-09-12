@@ -163,7 +163,7 @@ Lieutenant Colonel Coates and his wife Me’Shell reside in Howard County, MD wi
     section: "628th IEW BN",
     name: "Sergeant Major Johnathan X. McGlone",
     title: "Command Sergeant Major of the 628th Intelligence & Electronic Warfare Battalion",
-    image: "images/CSM McGlone.jpg",
+    image: "images/2026-09-11 CSM McGlone_01-6-Edit_8x10.jpg",
     bio: `Born in Norfolk, Virginia, Sergeant Major Johnathan McGlone began his military career in 2003 by enlisting in the Maryland Army National Guard as a culinary specialist. After graduating from Basic Combat Training and Advanced Individual Training, he was assigned to the 1-175th Infantry Battalion, where he quickly demonstrated his leadership potential. In 2009, he was promoted to Culinary Management NCO for HHC 1-224th Aviation. While with this unit, he deployed to Kosovo in 2013 as part of Task Force Phalanx, providing critical logistical support to a MEDEVAC unit from the Oregon National Guard in support of peacekeeping missions.
     
 In 2016, Sergeant Major McGlone deployed with the historic 29th Infantry Division to Zarqa, Jordan, where he served as the Deputy Mayor of the Joint Training Center, a multinational base housing U.S. and allied forces. Upon returning, his leadership trajectory continued with his selection in 2021 as the First Sergeant for Maryland's largest Army National Guard unit, the 729th Quartermaster Company. Following this key assignment, he was promoted to Command Sergeant Major for the 1297th Combat Support Sustainment Battalion (CSSB) in 2024, where he was instrumental in leading soldiers to "Support the Battle."
