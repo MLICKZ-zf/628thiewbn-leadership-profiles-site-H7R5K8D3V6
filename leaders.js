@@ -180,7 +180,7 @@ Sergeant Major McGlone lives in Baltimore, Maryland, with his wife, Steffanie, a
     section: "HHC, 628th IEW BN",
     name: "Captain Mathew M. Melcher",
     title: "Commander, HHC, 628th Intelligence & Electronic Warfare Battalion",
-    image: "images/CPT Melcher.jpg",
+    image: "images/2026-09-02 CPT Melcher_01_8x10.jpg",
     bio: `Captain Mathew Melcher was born in Mesa, Arizona and enlisted in the United States Army in September 2001 as an Arabic Cryptologic Linguist. Upon completion of Language School and Advanced Individual Training, he was assigned to 10th Special Forces Group (Airborne). Following completion of the Special Forces Qualification Course, he served as a Special Forces Medical Sergeant with 5th Special Forces Group (Airborne) and later joined the Maryland Army National Guard and was assigned to 20th Special Forces Group (Airborne).
 
 Captain Melcher received his commission as a Military Intelligence Officer through Officer Candidate School, and he served as a Signal Intelligence Platoon Leader with the 629th Expeditionary-Military Intelligence Battalion. His subsequent assignments have included a Political-Military Analyst with the Europe and Eurasia Center in the Defense Intelligence Agency, and as both Senior Instructor and a Train, Advise, and Counsel (TAC) Officer with the Maryland Army National Guard Officer Candidate School.
