@@ -197,7 +197,7 @@ Captain Melcher and his wife, Captain Anna Hagan, live in Maryland with their th
     section: "HHC, 628th IEW BN",
     name: "First Sergeant Gavin B. Beem",
     title: "First Sergeant, HHC, 628th Intelligence & Electronic Warfare Battalion",
-    image: "images/commander.jpg",
+    image: "images/1SG Beem.jpg",
     bio: `Born in Saint Joseph, MI, 1SG Gavin B. Beem entered military service in 2012 as an All-Source Intelligence Analyst (35F) in the Wisconsin Army National Guard (WIARNG). 1SG Beem served with the 32nd Infantry Brigade Combat Team “Red Arrow”, at Camp Douglas, WI before reclassing Military Occupational Specialties to a Counterintelligence Agent (35L).  He then completed an interstate transfer to join Alpha Company at the 629th Expeditionary Military Intelligence Brigade out of Laurel, MD.
     
 1SG Beem deployed with the 629th EMIB to Afghanistan from May of 2020 through February of 2021. He served as the Counterintelligence Team Lead at Camp Dwyer located within Helmand Province. After returning from Afghanistan, 1SG Beem transferred to the 29th Infantry Division to serve as the G2X Platoon Sergeant. He also conducted joint training exercises in Estonia and Poland. In Estonia, 1SG Beem served as a Counterintelligence Agent while supporting Operation Hedgehog. In Poland, 1SG Beem served as the G2X Team Lead while supporting Immediate Response 2024. 
